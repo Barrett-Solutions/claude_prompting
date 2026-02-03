@@ -20,8 +20,9 @@ There are two agents, a planning agent and a implementing agent.
 - [test-first-partner.md](.claude/agents/test-first-partner.md) - This agent will be used when implementing the plan.
 
 ## Installation
+- Download the release and unzip it.
 - Copy the .claude folder to your repo
-- Put the CLAUDE.md file in the root of the repo.
+- Copy the CLAUDE.md file to the base of your repo
 
 
 
