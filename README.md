@@ -23,13 +23,7 @@ There are two agents, a planning agent and a implementing agent.
 - Copy the .claude folder to your repo
 - Put the CLAUDE.md file in the root of the repo.
 
-## Getting Started
 
-**Your first session:**
-
-1. Open Claude Code in your project directory
-2. Say: "Please read index.md from the .claude folder"
-3. Start building with your preferred practices already in place
 
 ### Bibliography
 - https://github.com/VoltAgent/awesome-claude-code-subagents
