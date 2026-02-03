@@ -13,7 +13,7 @@
  **Quality is Incremental**
  - Perfect code doesn't exit, but better code does
  - Small improvements compound over time
- - You don't have to make the code better, but you at least have to make it less bad
+ - You don't have to make the code better every time, strive to make it less bad
  
  **Understanding Before Building**
  - Don't start coding until you understand the problem
@@ -39,7 +39,7 @@
 - Service layer: coordination, orchestration, and boundary protection
 - Infrastructure layer: databasees, API, external systems
 - Exceptions at service boundaries (validate input, catch domain exceptions)
--Clear boundaries make testing and changes easy
+- Clear boundaries make testing and changes easy
 
 ---
 
@@ -54,7 +54,6 @@
 - Red-green-refactor: no shortcuts
 - One test at a time: resist the urge to skip ahead
 - The rhythm produces quality
-
 
 **Error Handling Philosophy**
 - Domain objects raise exceptions for violated business rules
