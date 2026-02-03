@@ -60,6 +60,7 @@ We write exactly one test, make it pass, and then refactor. Then move to the nex
 - Business rules in the domain model
 - Public interfaces and contracts
 - Edge cases and boundary conditions
+- Navigation intent (verify actions trigger correct navigation calls)
 
 **Don't Test:**
 - Private methods (test through public interface)
@@ -68,6 +69,9 @@ We write exactly one test, make it pass, and then refactor. Then move to the nex
 - Trivial pass-through code
 - Simple getters/setters with no logic
 - Types that have only getters/setters and no logic
+- UI presentation or styles (visual appearance, CSS, layout)
+- Actual screen transitions (trust the router/framework)
+
 
 ## Writing Good Tests
 **One Behavior Per Test**

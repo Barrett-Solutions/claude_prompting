@@ -4,6 +4,9 @@ This is a set of knowledge base files (aka prompts) that helps Claude Code under
 
 Think of it as teaching Claude how we want to work — philosophy, rhythm, patterns.
 
+## Start every new claude session with the following:
+Please read index.md
+
 ## Core Files (Read at Session Start)
 
 - **[index.md](index.md)** - Start here! Navigation and usage guide
@@ -12,7 +15,7 @@ Think of it as teaching Claude how we want to work — philosophy, rhythm, patte
 
 
 ## Installation
-- Copy the files in the .claude folder to your .claude folder
+- Copy the files to your .claude folder
 - 
 
 
