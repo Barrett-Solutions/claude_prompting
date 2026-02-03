@@ -21,7 +21,7 @@ Claude will read this file and the core references, then work with you using you
 
 **Read these when the topic comes up during the session:**
 - [philosophy.md](philosophy.md) - Your development philosophy and values
-- [planning.md](planning.md) - Planning policy and the typescript-pro agent
+- [planning.md](planning.md) - Planning policy and the typescript-planner agent
 - [testing.md](testing.md) - Test-first development and red-green-refactor cycle
 - [refactoring.md](refactoring.md) - When and how to refactor code
 - [decisions.md](decisions.md) - Key architectural and design decisions

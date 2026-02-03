@@ -1,5 +1,5 @@
 ---
-name: typescript-pro
+name: typescript-planner
 description: TypeScript architecture and planning agent. Use when designing type structures, evaluating approaches, or reviewing code for type safety. Analyzes code and recommends solutions without making changes directly.
 tools: Read, Glob, Grep, Bash
 model: sonnet
