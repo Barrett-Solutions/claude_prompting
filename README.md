@@ -22,8 +22,9 @@ The general idea of agents (or sub-agents) is that they can have specialized exp
 A key trade off is that using an agent is trading direct control for efficiency. Instead of telling the LLM to "create file X that will do ...". The agent is giving relevant information from the plan and then left to complete the task. 
 
 ## Installation
+- Download the release and unzip it.
 - Copy the .claude folder to your repo
-- Put the CLAUDE.md file in the root of the repo.
+- Copy the CLAUDE.md file to the base of your repo
 
 ## ToDo 
 - Figure out how to share these files (prompts and agents) with other LLMs or IDEs 
