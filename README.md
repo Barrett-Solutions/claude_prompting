@@ -41,9 +41,6 @@ A key trade off is that using an agent is trading direct control for efficiency.
             - How does one have multiple cursorrules?
         - Something about Agents
 
-- Update style-guide to remove entries about tabs, whitespace, line lengths, etc. **Configure a linter!!**
-    Perhaps a skill that will invoke prettier and then fix any problems?
-
 - Update planning to produce a more concise or less verbose plan. I feel that Claude can get a bit wordy when making plans. Concise plans __may__ be better for handing off to sub-agents. 
 Maybe just ask the user if they would like a more concise plan?
 - 

@@ -60,6 +60,3 @@ A living knowledge base grows with your project and partnership.
 3. **Focus on differences** - Document what's unique to your approach, not universal practices
 4. **Reference explicitly** - When something important comes up, ask Claude to "read testing.md" or reference the relevant file
 
----
-
-*This knowledge base is designed for use with Claude Code and follows the starter template from [Coding with Claude](https://youtube.com/@codingwithclaude).*
