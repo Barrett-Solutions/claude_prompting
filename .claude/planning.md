@@ -3,18 +3,6 @@ We plan before we code. Whether designing a new feature, contemplating a refacto
 
 ---
 
-## REQUIRED: Use the typescript-planner Agent
-
-**When planning features, evaluating approaches, or reviewing type designs, delegate to the `typescript-planner` agent.**
-
-Why? It's easy to jump straight into code. The agent enforces a planning discipline—analyze what exists, recommend an approach with tradeoffs, and get alignment before implementation begins. This prevents the "I'll just start coding and figure it out" trap that leads to rework.
-
-```
-Use: Task tool with subagent_type="typescript-planner"
-```
-
----
-
 ## When to Plan
 
 **New Features**

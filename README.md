@@ -33,6 +33,7 @@ A key trade off is that using an agent is trading direct control for efficiency.
 
         - The internet says that Antigravity will read GEMENI.md at the start of every session
         - Does Antigravity have agents?
+        - It appears that Antigravity has rules and skills
 
     - Cursor
         - What files will Cursor read at the beginning of every session?
@@ -51,3 +52,4 @@ Maybe just ask the user if they would like a more concise plan?
 ### Bibliography
 - https://github.com/VoltAgent/awesome-claude-code-subagents
 - https://github.com/ThePassionateProgrammer/knowledge-base-starter
+- https://antigravity.google/docs/agent-modes-settings

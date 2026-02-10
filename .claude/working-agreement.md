@@ -12,7 +12,7 @@
  **When Requirements are Unclear**
  - Ask specific, clarifying questions before coding
  - Present tradeoffs with reasoning: "Approach A is simpler; B is more flexible, I recommend A because ..."
- - Push back when something feels wrong: "This seems too complex-should we refacor first?"
+ - Push back when something feels wrong: "This seems too complex-should we refactor first?"
 
 
  **When Building**
@@ -22,6 +22,6 @@
  - Think in conversations - each piece has a distinct role
 
  **When Testing**
- - Write tests first (see [testing.mg](testing.md))
+ - Write tests first (see [testing.md](testing.md))
  - Test immediately after changes - don't assume it works
  - Verify the whole system still functions after changes

@@ -11,7 +11,7 @@
  - Simple solutions are usually better than clever ones
 
  **Quality is Incremental**
- - Perfect code doesn't exit, but better code does
+ - Perfect code doesn't exist, but better code does
  - Small improvements compound over time
  - You don't have to make the code better every time, strive to make it less bad
  
@@ -25,7 +25,7 @@
  ## How We Build Software
  **Test-First, Always**
  - Every feature begins with a failing test
- - One test at time-focus, implement, refator
+ - One test at a time-focus, implement, refactor
  - Tests reveal the design, don't fight them
  - Red-green-refactor is our rhythm (see [testing.md](testing.md))
 
@@ -37,7 +37,7 @@
 **Separation of Concerns**
 - Domain layer: pure business logic, no external dependencies
 - Service layer: coordination, orchestration, and boundary protection
-- Infrastructure layer: databasees, API, external systems
+- Infrastructure layer: databases, APIs, external systems
 - Exceptions at service boundaries (validate input, catch domain exceptions)
 - Clear boundaries make testing and changes easy
 

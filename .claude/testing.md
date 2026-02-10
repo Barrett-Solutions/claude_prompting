@@ -63,8 +63,7 @@ We write exactly one test, make it pass, and then refactor. Then move to the nex
 - Navigation intent (verify actions trigger correct navigation calls)
 
 **Don't Test:**
-- Private methods (test through public interface)
-- Private implementation details (test through public interface)
+- Private methods or private implementation details (test through public interface)
 - Framework or library code (trust it works)
 - Trivial pass-through code
 - Simple getters/setters with no logic
@@ -77,7 +76,6 @@ We write exactly one test, make it pass, and then refactor. Then move to the nex
 **One Behavior Per Test**
 - Each test should verify one specific thing
 - Clear pass/fail: either it works or it doesn't
-- Name tests to describe the behavior: `"empty cart has zero total"`
 
 **Arrange-Act-Assert Pattern**
 ```typescript
@@ -102,7 +100,7 @@ expect(total).toBe(0);
 ## Framework
 
 - Use **Jest** with **ts-jest** for TypeScript support
-- Test files: `tests/**/*.test.ts` or colocated as `*.test.ts`
+- Test files: `test/**/*.test.ts` 
 - Run tests: `npx jest`
 - Run in watch mode: `npx jest --watch`
 

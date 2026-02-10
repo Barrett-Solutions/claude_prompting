@@ -1,8 +1,6 @@
 # Knowledge Base - Start Here
 
-This knowledge base helps Claude Code understand your development preferences and practices. At the start of each session, share this message:
-
-**"Please read index.md from my knowledge base"**
+This knowledge base helps Claude Code understand your development preferences and practices.
 
 Claude will read this file and the core references, then work with you using your established practices.
 
@@ -21,7 +19,7 @@ Claude will read this file and the core references, then work with you using you
 
 **Read these when the topic comes up during the session:**
 - [philosophy.md](philosophy.md) - Your development philosophy and values
-- [planning.md](planning.md) - Planning policy and the typescript-planner agent
+- [planning.md](planning.md) - Planning policy 
 - [testing.md](testing.md) - Test-first development and red-green-refactor cycle
 - [refactoring.md](refactoring.md) - When and how to refactor code
 - [decisions.md](decisions.md) - Key architectural and design decisions
@@ -59,9 +57,8 @@ A living knowledge base grows with your project and partnership.
 
 1. **Be specific** - The more concrete your guidelines, the better Claude can follow them
 2. **Update regularly** - Add new learnings and decisions as they emerge
-3. **Keep it concise** - Each file should be under 400 words
-4. **Focus on differences** - Document what's unique to your approach, not universal practices
-5. **Reference explicitly** - When something important comes up, ask Claude to "read testing.md" or reference the relevant file
+3. **Focus on differences** - Document what's unique to your approach, not universal practices
+4. **Reference explicitly** - When something important comes up, ask Claude to "read testing.md" or reference the relevant file
 
 ---
 

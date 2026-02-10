@@ -36,14 +36,6 @@ test/             # All tests in separate directory
 ---
 
 ## Formatting
-**Indentation**
-- Use consistent indentation: *tabs*
-- Be consistent across entire project
-
-**Line Length**
-- Aim for 80-120 characters per line
-- Break long lines at logical points
-- Don't sacrifice readability for line length rules
 
 **Whitespace**
 - Use blank lines to separate logical sections
@@ -59,11 +51,10 @@ test/             # All tests in separate directory
 **When NOT to Comment**
 - Don't explain what the code obviously does
 - Don't leave commented-out code
-- Don't appoligize for code quality (fix it instead)
+- Don't apologize for code quality (fix it instead)
+- Don't explain getters and setters
 
 **Documentation**
 - Public APIs and interfaces need clear documentation
 - Include parameter descriptions and return values
 - Provide usage examples for complex functionality
-
----
