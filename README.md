@@ -15,10 +15,9 @@ Claude code automatically reads this file at the start of every session. So it b
 
 
 ## Agents
-There are two agents, a planning agent and a implementing agent.
-- [typescript-planner.md](.claude/agents/typescript-planner.md) - This agent will be used to build the plan
+There is an agent implements the plan and follows a TDD rhythm.
 - [test-first-partner.md](.claude/agents/test-first-partner.md) - This agent will be used when implementing the plan.
-The general idea of agents (or sub-agents) is that they can have specialized expertise (test-first, planning) and they can be handed a specific task (part of the plan) to accomplish on their own. I beleive they have their own context window and are only given the parts of the plan that are necessary. They don't need to hold the entire context or the entire plan. 
+The general idea of agents (or sub-agents) is that they can have specialized expertise and they can be handed a specific task (part of the plan) to accomplish on their own. I beleive they have their own context window and are only given the parts of the plan that are necessary. They don't need to hold the entire context or the entire plan. 
 A key trade off is that using an agent is trading direct control for efficiency. Instead of telling the LLM to "create file X that will do ...". The agent is giving relevant information from the plan and then left to complete the task. 
 
 ## Installation
