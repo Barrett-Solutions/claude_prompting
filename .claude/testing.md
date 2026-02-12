@@ -97,14 +97,14 @@ expect(total).toBe(0);
 ---
 
 
-## Framework
+## TypeScript Framework and Conventions
 
 - Use **Jest** with **ts-jest** for TypeScript support
 - Test files: `test/**/*.test.ts` 
 - Run tests: `npx jest`
 - Run in watch mode: `npx jest --watch`
 
-## Test Structure
+### Test Structure
 
 ```typescript
 describe("ClassName", () => {
@@ -127,13 +127,13 @@ describe("ClassName", () => {
 });
 ```
 
-## Naming Conventions
+### Naming Conventions
 
 - Test files: `<module_name>.test.ts`
 - Describe blocks: `describe("<ClassName>")` or `describe("<functionName>")`
 - Test cases: `it("should <behavior> when <scenario>")`
 
-## Assertions
+### Assertions
 
 Use Jest's built-in `expect` assertions:
 
@@ -149,7 +149,7 @@ Use Jest's built-in `expect` assertions:
 | `expect(a).toContain(b)` | Check membership |
 | `expect(a).toHaveLength(n)` | Check array/string length |
 
-## Mocking
+### Mocking
 
 - Use Jest's built-in `jest.fn()` and `jest.mock()` for mocking dependencies
 - Mock external services (APIs, databases) in unit tests
@@ -167,4 +167,75 @@ describe("Service", () => {
         // Test code here
     });
 });
+```
+
+## Python Framework and Conventions
+
+- Use **unittest** (Python standard library) for all tests
+- Test files: `test/test_<module_name>.py`
+- Run tests: `python -m unittest discover --verbose`
+- Run a single file: `python -m unittest test.test_<module_name> --verbose`
+
+### Test Structure
+
+```python
+# test/test_shopping_cart.py
+import unittest
+from src.shopping_cart import ShoppingCart
+
+
+class TestShoppingCart(unittest.TestCase):
+
+    def setUp(self):
+        # Arrange - shared setup for each test
+        self.cart = ShoppingCart()
+
+    def test_should_return_zero_total_when_empty(self):
+        # Act
+        total = self.cart.calculate_total()
+
+        # Assert
+        self.assertEqual(total, 0)
+
+
+if __name__ == "__main__":
+    unittest.main()
+```
+
+### Naming Conventions
+
+- Test files: `test_<module_name>.py`
+- Test classes: `Test<ClassName>` extending `unittest.TestCase`
+- Test methods: `test_should_<behavior>_when_<scenario>`
+- Use `setUp` for per-test setup, `tearDown` for cleanup
+
+### Assertions
+
+| Assertion | Use Case |
+|-----------|----------|
+| `self.assertEqual(a, b)` | Equality |
+| `self.assertIs(a, b)` | Identity |
+| `self.assertTrue(x)` | Truthy |
+| `self.assertFalse(x)` | Falsy |
+| `self.assertIsNone(x)` | Check None |
+| `self.assertIsNotNone(x)` | Check not None |
+| `self.assertRaises(ValueError, fn)` | Check exception raised |
+| `self.assertIn(b, a)` | Check membership |
+| `self.assertEqual(len(a), n)` | Check length |
+
+### Mocking
+
+- Use `unittest.mock` (built-in):
+- Mock external services (APIs, databases) in unit tests
+
+```python
+from unittest.mock import MagicMock, patch
+
+class TestService(unittest.TestCase):
+
+    @patch("src.service.external_api.fetch")
+    def test_should_call_external_api(self, mock_fetch):
+        mock_fetch.return_value = {"data": "value"}
+
+        # Act and Assert
 ```
