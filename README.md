@@ -15,8 +15,11 @@ Claude code automatically reads this file at the start of every session. So it b
 
 
 ## Agents
-There is an agent implements the plan and follows a TDD rhythm.
-- [test-first-partner.md](.claude/agents/test-first-partner.md) - This agent will be used when implementing the plan.
+There are two agents that can be used to implement the plan and follows a TDD rhythm.
+- [test-first-partner.md](.claude/agents/test-first-partner.md) - This agent is geared towards TypeScript.
+- [test-first-partner-python.md](.claude/agents/test-first-partner-python.md) - This agent is geared towards Python. 
+
+
 The general idea of agents (or sub-agents) is that they can have specialized expertise and they can be handed a specific task (part of the plan) to accomplish on their own. I beleive they have their own context window and are only given the parts of the plan that are necessary. They don't need to hold the entire context or the entire plan. 
 A key trade off is that using an agent is trading direct control for efficiency. Instead of telling the LLM to "create file X that will do ...". The agent is giving relevant information from the plan and then left to complete the task. 
 
@@ -27,23 +30,23 @@ A key trade off is that using an agent is trading direct control for efficiency.
 
 ## ToDo 
 - Figure out how to share these files (prompts and agents) with other LLMs or IDEs 
-    - Antigravity 
+    ### Antigravity 
+
+    **See the Antigravity branch of this repo**
+    
     Antigravity allows the use of different LLM models, including Claude. If we choose claude models, we are probably fine.
 
         - The internet says that Antigravity will read GEMENI.md at the start of every session
         - Does Antigravity have agents?
         - It appears that Antigravity has rules and skills
 
-    - Cursor
+    ### Cursor
         - What files will Cursor read at the beginning of every session?
         - Rules sound like Claudes version of KB files
             - The file is called .cursorrules at the root of the repo.
             - How does one have multiple cursorrules?
         - Something about Agents
-
-- Update planning to produce a more concise or less verbose plan. I feel that Claude can get a bit wordy when making plans. Concise plans __may__ be better for handing off to sub-agents. 
-Maybe just ask the user if they would like a more concise plan?
-- 
+ 
 
 ### Bibliography
 - https://github.com/VoltAgent/awesome-claude-code-subagents
